@@ -1,7 +1,7 @@
 
 function Home() {
     return (
-        <div className="home-page ">
+        <div className="home-page w-full">
             <img className="w-full" src="../images/StatusBar.png" alt="status"></img>
             <div class="w-9/10 mx-auto mt-3">
                 <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
