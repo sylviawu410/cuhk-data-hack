@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
-
+import venue from './Inclusive_Park_for_Pets_in_Hong_Kong.js'
 import 'mapbox-gl/dist/mapbox-gl.css';
+
+
 function Location() {
   const mapContainerRef = useRef();
   const mapRef = useRef();
@@ -16,31 +18,24 @@ function Location() {
       zoom: 9 // starting zoom
     });
 
-    new mapboxgl.Marker({ color: 'black' })
-      .setLngLat([114.18821653955274, 22.3821297743702])
-      .addTo(mapRef.current);
+    
+
+      venue.features.forEach(venue => {
+        new mapboxgl.Marker()
+          .setLngLat([venue.properties.LONGITUDE, venue.properties.LATITUDE])
+          .addTo(mapRef.current);
+      });
 
 
-    new mapboxgl.Marker({ color: 'gray' })
-      .setLngLat([114.03491020525726, 22.452561052252967])
-      .addTo(mapRef.current);
-
-      new mapboxgl.Marker({ color: 'gray' })
-      .setLngLat([114.13598892527956, 22.378650721812622])
-      .addTo(mapRef.current);
-
-      new mapboxgl.Marker({ color: 'gray' })
-      .setLngLat([114.13967752318426, 22.314269524376392])
-      .addTo(mapRef.current);
 
 
-  });
+  },[]);
 
   return (
     <div className="location-page ">
       <img className="w-full" src="../images/StatusBar.png" alt="status"></img>
       <div className='flex border-b-1 py-4 border-gray-200'>
-        <img className='ml-2 h-7' src='../images/arrow-left.svg' alt='/'></img>
+      <a href="http://localhost:3000/"><img className='ml-2 h-7' src='../images/arrow-left.svg' alt='/'></img></a>
         <div className='font-semibold text-xl ml-18 '>Provided Locations</div>
       </div>
       <div className="flex border-b-1 py-5 border-gray-300 justify-between">
