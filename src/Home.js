@@ -26,7 +26,7 @@ function Home() {
             <div className="flex justify-center flex-col">
                 <div className="w-9/10 flex mt-9 items-center mx-auto">
                     <div className="font-semibold text-[20px] leading-3">Discover Places Nearby</div>
-                    <img className="ml-3" src="../images/right-arrow.svg" alt='arrow'></img>
+                    <a href="http://localhost:3000/location"><img className="ml-3"  src="../images/right-arrow.svg" alt='arrow'></img></a>
                 </div>
                 <div className='w-9/10 ml-5 flex justify-evenly items-start mt-5'>
                     <img className="w-25 h-auto" src="../images/place1.png" alt='place'></img>
