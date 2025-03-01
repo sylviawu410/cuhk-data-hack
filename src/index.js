@@ -11,7 +11,7 @@ import reportWebVitals from './reportWebVitals';
 
 const App = () => {
   return (
-    <BrowserRouter basename='demo-app' >
+    <BrowserRouter basename='/demo-app' >
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/top-match" element={<TopMatch />} />
