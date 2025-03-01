@@ -1,7 +1,7 @@
 function About() {
     return (
         <div>
-            <img className="w-full" src="../images/StatusBar.png" alt="status"></img>
+            <img className="w-full" src={`${process.env.PUBLIC_URL}/images/StatusBar.png`} alt="status"></img>
             <div className='flex border-b-1 py-4 border-gray-200'>
                 <a href="http://localhost:3000/"><img className='ml-2 h-7' src='../images/arrow-left.svg' alt='/'></img></a>
                 <div className='font-semibold text-xl ml-30 '>About Us</div>
@@ -13,7 +13,7 @@ function About() {
                 </div>
                 <div className="mt-4">PawPals was founded by 5 passionate students longing to contribute to the community in 2025. Through the collaboration with local dog shelters and volunteering sites, we provide a mutually beneficial relationship for the public to enjoy genuine companionship, while reinforcing the effects of social good simultaneously. In PawPals, we welcome everyone and anyone to utilize our services, make social impacts, and enhance your personal well-being, because everyone deserves it!</div>
                 <button type="button" className=" mt-3 w-full text-white bg-black hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-1.5 h-[35px] ">More About PawPals</button>
-                <img className="my-5" src="../images/footprints.png" alt='/'></img>
+                <img className="my-5" src={`${process.env.PUBLIC_URL}/images/footprints.png`} alt='/'></img>
                 
                 <div className="font-semibold text-2xl mt-9">Why Us?</div>
 
@@ -28,22 +28,22 @@ function About() {
                 <div className="scroll-container  my-5">
                     <div className="scroll-text">
                         <div className="scroll-item">
-                            <img src="../images/org1.png" alt="/"></img>
+                            <img src={`${process.env.PUBLIC_URL}/images/org1.png`} alt="/"></img>
                         </div>
                         <div className="scroll-item">
-                        <img src="../images/org2.png" alt="/"></img>
+                        <img src={`${process.env.PUBLIC_URL}/images/org2.png`} alt="/"></img>
                         </div>
                         <div className="scroll-item">
-                        <img src="../images/org3.png" alt="/"></img>
+                        <img src={`${process.env.PUBLIC_URL}/images/org3.png`} alt="/"></img>
                         </div>
                         <div className="scroll-item">
-                        <img src="../images/org4.png" alt="/"></img>
+                        <img src={`${process.env.PUBLIC_URL}/images/org4.png`} alt="/"></img>
                         </div>
                         <div className="scroll-item">
-                        <img src="../images/org5.png" alt="/"></img>
+                        <img src={`${process.env.PUBLIC_URL}/images/org5.png`} alt="/"></img>
                         </div>
                         <div className="scroll-item">
-                        <img src="../images/org6.png" alt="/"></img>
+                        <img src={`${process.env.PUBLIC_URL}/images/org6.png`} alt="/"></img>
                         </div>
                     </div>
                 </div>

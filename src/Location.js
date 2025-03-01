@@ -33,7 +33,7 @@ function Location() {
 
   return (
     <div className="location-page ">
-      <img className="w-full" src="../images/StatusBar.png" alt="status"></img>
+      <img className="w-full" src={`${process.env.PUBLIC_URL}/images/StatusBar.png`} alt="status"></img>
       <div className='flex border-b-1 py-4 border-gray-200'>
       <a href="http://localhost:3000/"><img className='ml-2 h-7' src='../images/arrow-left.svg' alt='/'></img></a>
         <div className='font-semibold text-xl ml-18 '>Provided Locations</div>
@@ -59,7 +59,7 @@ function Location() {
         />
       </div>
 
-      {/* <img src="../images/map.png" className="w-full" alt='/'></img> */}
+      {/* <img src={`${process.env.PUBLIC_URL}/images/map.png" className="w-full" alt='/'></img> */}
 
       <div >
         <hr className="h-[4px] rounded my-3 bg-gray-300 border-0 w-[55px] mx-auto mb-4" />
@@ -78,7 +78,7 @@ function Location() {
           </div>
 
         </div>
-        <img className="w-full h-auto border-t-1 border-gray-300" src="../images/tabs.png" alt='/'></img>
+        <img className="w-full h-auto border-t-1 border-gray-300" src={`${process.env.PUBLIC_URL}/images/tabs.png`} alt='/'></img>
       </div>
 
     </div>
