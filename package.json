@@ -1,6 +1,7 @@
 {
   "name": "demo-app",
   "version": "0.1.0",
+  "homepage": "https://sylviawu410.github.io/demo-app",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -15,6 +16,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -37,5 +40,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@aws-amplify/backend": "^1.14.1",
+    "@aws-amplify/backend-cli": "^1.4.11",
+    "aws-cdk": "^2.1001.0",
+    "aws-cdk-lib": "^2.181.1",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.25.0",
+    "gh-pages": "^6.3.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
   }
 }

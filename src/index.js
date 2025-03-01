@@ -14,7 +14,7 @@ const App = () => {
     <BrowserRouter basename='/demo-app' >
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/top-match" element={<TopMatch />} />
+        <Route href={`${process.env.PUBLIC_URL}/top-match`}  element={<TopMatch />} />
         <Route path="/location" element={<Location />} />
         <Route path="/about" element={<About />} />
       </Routes>
