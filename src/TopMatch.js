@@ -4,7 +4,7 @@ function TopMatch() {
     <div className="match-page w-full">
       <img className="w-full" src={`${process.env.PUBLIC_URL}/images/StatusBar.png`} alt="status"></img>
       <div className='flex border-b-1 py-4 border-gray-200'>
-      <a href={`${process.env.PUBLIC_URL}`}><img className='ml-2 h-7' src='../images/arrow-left.svg' alt='/'></img></a>
+      <a href={`${process.env.PUBLIC_URL}`}><img className='ml-2 h-7' src={`${process.env.PUBLIC_URL}/images/arrow-left.svg`} alt='/'></img></a>
         <div className='font-semibold text-xl ml-18 '>Top Matches For You</div>
       </div>
       <div className="w-9/10 flex my-5 items-center mx-auto justify-between">
