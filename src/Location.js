@@ -24,6 +24,10 @@ function Location() {
         .addTo(mapRef.current);
     });
 
+    new mapboxgl.Marker({ color: 'black' })
+      .setLngLat([114.18821653955274, 22.3821297743702])
+      .addTo(mapRef.current);
+
 
   }, []);
 

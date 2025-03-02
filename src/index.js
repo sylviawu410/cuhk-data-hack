@@ -6,6 +6,7 @@ import Home from './Home.js'
 import Location from './Location.js'
 import TopMatch from './TopMatch.js';
 import About from './About.js';
+import Detail from './Detail.js';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/top-match" element={<TopMatch />} />
         <Route path="/location" element={<Location />} />
         <Route path="/about" element={<About />} />
+        <Route path="/detail" element={<Detail />} />
       </Routes>
     </HashRouter>
   );

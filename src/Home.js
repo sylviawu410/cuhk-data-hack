@@ -40,7 +40,7 @@ function Home() {
                     <div className="font-semibold text-[20px] leading-3">Top Matches for You</div>
                     <a href={`${process.env.PUBLIC_URL}/#/top-match`}><img className="ml-3" src={`${process.env.PUBLIC_URL}/images/right-arrow.svg`} alt='arrow'></img></a>
                 </div>
-                <a href={`${process.env.PUBLIC_URL}/#/top-match`}>
+                <a href={`${process.env.PUBLIC_URL}/#/detail`}>
                     <div className='w-9/10 ml-5 flex justify-evenly items-start mt-5 overflow-hidden'>
                         <img className="w-40 h-auto" src={`${process.env.PUBLIC_URL}/images/match1.png`} alt='/'></img>
                         <img className="w-40 h-auto" src={`${process.env.PUBLIC_URL}/images/match2.png`} alt='/'></img>
