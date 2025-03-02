@@ -29,25 +29,26 @@ function Location() {
 
   return (
     <div className="location-page ">
-      
-
-      <div className='flex items-center border-b-1 py-3 border-gray-200'>
-        <a href={`${process.env.PUBLIC_URL}/#/`} >
-          <img className='h-5 ml-2' src={`${process.env.PUBLIC_URL}/images/arrow-left.svg`} alt='/'></img>
-        </a>
-        <div className='font-semibold text-lg mx-auto'>Provided Locations</div>
+      <div className="sticky top-0 bg-white z-20">
+        <div className='flex items-center border-b-1 py-4 border-gray-200 bg-white relative'>
+          <a href={`${process.env.PUBLIC_URL}/#/`} >
+            <img className='h-5 ml-2 absolute top-5' src={`${process.env.PUBLIC_URL}/images/arrow-left.svg`} alt='/'></img>
+          </a>
+          <div className='font-semibold text-lg mx-auto'>Locations</div>
+        </div>
       </div>
 
-      <div className="flex border-b-1 py-4 border-gray-300 justify-between">
+
+      <button className="w-full flex border-b-1 py-3.5 border-gray-300 justify-between focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
         <div className='ml-5 font-medium'>AREA</div>
         <div className='ml-18'>New Territories</div>
         <img className='mr-5 h-6' src={`${process.env.PUBLIC_URL}/images/arrow_right_gray.svg`} alt='/'></img>
-      </div>
-      <div className="flex border-b-1 py-4 border-gray-300 justify-between">
+      </button>
+      <button className="w-full flex border-b-1 py-3.5 border-gray-300 justify-between focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
         <div className='ml-5 font-medium'>DISTRICT</div>
         <div className=''>Sha Tin</div>
         <img className='mr-5 h-6' src={`${process.env.PUBLIC_URL}/images/arrow_right_gray.svg`} alt='/'></img>
-      </div>
+      </button>
       <div>
 
       </div>

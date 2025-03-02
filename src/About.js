@@ -1,21 +1,20 @@
 function About() {
     return (
         <div>
-            
-            <div className='flex items-center border-b-1 py-4 border-gray-200'>
-                <a href={`${process.env.PUBLIC_URL}/#/`} >
-                    <img className='h-5 ml-2' src={`${process.env.PUBLIC_URL}/images/arrow-left.svg`} alt='/'></img>
-                </a>
-                <div className='font-semibold text-lg mx-auto'>About Us</div>
+            <div className="sticky top-0 bg-white z-20">
+                <div className='flex items-center border-b-1 py-4 border-gray-200 bg-white relative'>
+                    <a href={`${process.env.PUBLIC_URL}/#/`} >
+                        <img className='h-5 ml-2 absolute top-5' src={`${process.env.PUBLIC_URL}/images/arrow-left.svg`} alt='/'></img>
+                    </a>
+                    <div className='font-semibold text-lg mx-auto'>About Us</div>
+                </div>
             </div>
-
-
             <div className="w-9/10 mx-auto">
                 <div className=" my-10">
-                    <img className=" h-auto" src={`${process.env.PUBLIC_URL}/images/logo.png`} alt='/'></img>
+                    <img className=" h-auto size-60 mx-auto" src={`${process.env.PUBLIC_URL}/images/logo.png`} alt='/'></img>
                 </div>
                 <div className="mt-4">Founded by 5 passionate students longing to contribute to the community in 2025, we provide a mutually beneficial relationship for the public to enjoy genuine companionship, while reinforcing the effects of social good simultaneously through the collaboration with local dog shelters and volunteering sites.</div>
-                <button type="button" className=" mt-3 w-full text-white bg-black hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-1.5 h-[35px] ">More About PawPals</button>
+                <a href={`${process.env.PUBLIC_URL}/#/`} ><button type="button" className=" mt-5 w-full text-white bg-black hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-1.5 h-[35px] ">Explore PawPals</button></a>
                 <img className="my-10" src={`${process.env.PUBLIC_URL}/images/heatmap.png`} alt='heatmap'></img>
 
                 <div className="font-semibold text-2xl mt-9">Why Us?</div>
