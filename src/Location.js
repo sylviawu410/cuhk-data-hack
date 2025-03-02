@@ -29,17 +29,21 @@ function Location() {
 
   return (
     <div className="location-page ">
-      <img className="w-full" src={`${process.env.PUBLIC_URL}/images/StatusBar.png`} alt="status"></img>
-      <div className='flex border-b-1 py-4 border-gray-200'>
-        <a href={`${process.env.PUBLIC_URL}`}><img className='ml-2 h-7' src={`${process.env.PUBLIC_URL}/images/arrow-left.svg`} alt='/'></img></a>
-        <div className='font-semibold text-xl ml-18 '>Provided Locations</div>
+      
+
+      <div className='flex items-center border-b-1 py-3 border-gray-200'>
+        <a href={`${process.env.PUBLIC_URL}/#/`} >
+          <img className='h-5 ml-2' src={`${process.env.PUBLIC_URL}/images/arrow-left.svg`} alt='/'></img>
+        </a>
+        <div className='font-semibold text-lg mx-auto'>Provided Locations</div>
       </div>
-      <div className="flex border-b-1 py-5 border-gray-300 justify-between">
+
+      <div className="flex border-b-1 py-4 border-gray-300 justify-between">
         <div className='ml-5 font-medium'>AREA</div>
         <div className='ml-18'>New Territories</div>
         <img className='mr-5 h-6' src={`${process.env.PUBLIC_URL}/images/arrow_right_gray.svg`} alt='/'></img>
       </div>
-      <div className="flex border-b-1 py-5 border-gray-300 justify-between">
+      <div className="flex border-b-1 py-4 border-gray-300 justify-between">
         <div className='ml-5 font-medium'>DISTRICT</div>
         <div className=''>Sha Tin</div>
         <img className='mr-5 h-6' src={`${process.env.PUBLIC_URL}/images/arrow_right_gray.svg`} alt='/'></img>
@@ -75,7 +79,7 @@ function Location() {
 
         </div>
         <div className="sticky bottom-0 ">
-          <img className="w-full h-auto border-t-1 border-gray-200 bg-white" src={`${process.env.PUBLIC_URL}/images/tabs.png`} alt='/'></img>
+          <a href={`${process.env.PUBLIC_URL}/#/about`}><img className="w-full h-auto border-t-1 border-gray-200 bg-white" src={`${process.env.PUBLIC_URL}/images/tabs.png`} alt='/'></img></a>
         </div>
       </div>
 

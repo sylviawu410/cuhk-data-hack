@@ -2,10 +2,12 @@
 function TopMatch() {
   return (
     <div className="match-page w-full">
-      <img className="w-full" src={`${process.env.PUBLIC_URL}/images/StatusBar.png`} alt="status"></img>
-      <div className='flex border-b-1 py-4 border-gray-200'>
-        <a href={`${process.env.PUBLIC_URL}`}><img className='ml-2 h-7' src={`${process.env.PUBLIC_URL}/images/arrow-left.svg`} alt='/'></img></a>
-        <div className='font-semibold text-xl ml-18 '>Top Matches For You</div>
+      
+      <div className='flex items-center border-b-1 py-3 border-gray-200'>
+        <a href={`${process.env.PUBLIC_URL}/#/`} >
+          <img className='h-5 ml-2' src={`${process.env.PUBLIC_URL}/images/arrow-left.svg`} alt='/'></img>
+        </a>
+        <div className='font-semibold text-lg mx-auto'>Top Matches For You</div>
       </div>
       <div className="w-9/10 flex my-5 items-center mx-auto justify-between">
         <div className="font-semibold text-[17px] leading-3">Suggested</div>
@@ -35,7 +37,7 @@ function TopMatch() {
         <img className="h-[115px]" src={`${process.env.PUBLIC_URL}/images/dog6.png`} alt='/'></img>
       </div>
       <div className="sticky bottom-0 ">
-        <img className="w-full h-auto border-t-1 border-gray-200 bg-white" src={`${process.env.PUBLIC_URL}/images/tabs.png`} alt='/'></img>
+        <a href={`${process.env.PUBLIC_URL}/#/about`}><img className="w-full h-auto border-t-1 border-gray-200 bg-white" src={`${process.env.PUBLIC_URL}/images/tabs.png`} alt='/'></img></a>
       </div>
     </div>
   );

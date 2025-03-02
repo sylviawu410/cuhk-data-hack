@@ -2,7 +2,7 @@
 function Home() {
     return (
         <div className="home-page w-full">
-            <img className="w-full" src={`${process.env.PUBLIC_URL}/images/StatusBar.png`} alt="status"></img>
+            
             <div className="w-9/10 mx-auto mt-3">
                 <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
                 <div className="relative">
@@ -14,7 +14,7 @@ function Home() {
                     <input type="search" id="default-search" className="block w-full p-4 ps-10 text-sm text-gray-900 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 " placeholder="Search" required />
                 </div>
             </div>
-            <div className="flex flex-row gap-[8px] mt-3">
+            <div className="flex flex-row gap-[8px] mt-3 overflow-hidden">
                 <img className='h-9 ml-3' src={`${process.env.PUBLIC_URL}/images/fake-btn1.png`} alt="fake btn 1"></img>
                 <img className='h-9' src={`${process.env.PUBLIC_URL}/images/fake-btn2.png`} alt="fake btn 2"></img>
                 <img className='h-9' src={`${process.env.PUBLIC_URL}/images/fake-btn3.png`} alt="fake btn 3"></img>
