@@ -11,9 +11,8 @@ function About() {
 
 
             <div className="w-9/10 mx-auto">
-                <div className="flex gap-3 mt-5">
-                    <img className="w-45 h-auto" src={`${process.env.PUBLIC_URL}/images/bg1.png`} alt='/'></img>
-                    <img className="w-45 h-auto" src={`${process.env.PUBLIC_URL}/images/bg2.png`} alt='/'></img>
+                <div className=" my-10">
+                    <img className=" h-auto" src={`${process.env.PUBLIC_URL}/images/logo.png`} alt='/'></img>
                 </div>
                 <div className="mt-4">Founded by 5 passionate students longing to contribute to the community in 2025, we provide a mutually beneficial relationship for the public to enjoy genuine companionship, while reinforcing the effects of social good simultaneously through the collaboration with local dog shelters and volunteering sites.</div>
                 <button type="button" className=" mt-3 w-full text-white bg-black hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-1.5 h-[35px] ">More About PawPals</button>
