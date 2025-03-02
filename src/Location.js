@@ -84,8 +84,8 @@ function Location() {
 
         </div>
         <div className="sticky bottom-0 ">
-          <a href={`${process.env.PUBLIC_URL}/#/about`}><img className="w-full h-auto border-t-1 border-gray-200 bg-white" src={`${process.env.PUBLIC_URL}/images/tabs.png`} alt='/'></img></a>
-        </div>
+                    <a href={`${process.env.PUBLIC_URL}/#/about`}><img className="w-full h-auto border-t-1 border-gray-200 bg-white" src={`${process.env.PUBLIC_URL}/images/tabs.png`} alt='/'></img></a>
+                </div>
       </div>
 
     </div>
