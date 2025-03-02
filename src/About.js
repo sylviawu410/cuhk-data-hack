@@ -11,9 +11,9 @@ function About() {
                     <img className="w-45 h-auto" src={`${process.env.PUBLIC_URL}/images/bg1.png`} alt='/'></img>
                     <img className="w-45 h-auto" src={`${process.env.PUBLIC_URL}/images/bg2.png`} alt='/'></img>
                 </div>
-                <div className="mt-4">PawPals was founded by 5 passionate students longing to contribute to the community in 2025. Through the collaboration with local dog shelters and volunteering sites, we provide a mutually beneficial relationship for the public to enjoy genuine companionship, while reinforcing the effects of social good simultaneously. In PawPals, we welcome everyone and anyone to utilize our services, make social impacts, and enhance your personal well-being, because everyone deserves it!</div>
+                <div className="mt-4">Founded by 5 passionate students longing to contribute to the community in 2025, we provide a mutually beneficial relationship for the public to enjoy genuine companionship, while reinforcing the effects of social good simultaneously through the collaboration with local dog shelters and volunteering sites.</div>
                 <button type="button" className=" mt-3 w-full text-white bg-black hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-1.5 h-[35px] ">More About PawPals</button>
-                <img className="my-5" src={`${process.env.PUBLIC_URL}/images/footprints.png`} alt='/'></img>
+                <img className="my-10" src={`${process.env.PUBLIC_URL}/images/heatmap.png`} alt='heatmap'></img>
                 
                 <div className="font-semibold text-2xl mt-9">Why Us?</div>
 
@@ -72,6 +72,9 @@ function About() {
                 
 
             </div>
+            <div className="sticky bottom-0 ">
+                    <img className="w-full h-auto border-t-1 border-gray-200 bg-white" src={`${process.env.PUBLIC_URL}/images/tabs.png`} alt='/'></img>
+                </div>
 
 
         </div>

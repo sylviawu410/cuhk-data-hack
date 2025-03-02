@@ -18,20 +18,20 @@ function Location() {
       zoom: 9 // starting zoom
     });
 
-      venue.features.forEach(venue => {
-        new mapboxgl.Marker()
-          .setLngLat([venue.properties.LONGITUDE, venue.properties.LATITUDE])
-          .addTo(mapRef.current);
-      });
+    venue.features.forEach(venue => {
+      new mapboxgl.Marker()
+        .setLngLat([venue.properties.LONGITUDE, venue.properties.LATITUDE])
+        .addTo(mapRef.current);
+    });
 
 
-  },[]);
+  }, []);
 
   return (
     <div className="location-page ">
       <img className="w-full" src={`${process.env.PUBLIC_URL}/images/StatusBar.png`} alt="status"></img>
       <div className='flex border-b-1 py-4 border-gray-200'>
-      <a href="http://localhost:3000/"><img className='ml-2 h-7' src={`${process.env.PUBLIC_URL}/images/arrow-left.svg`} alt='/'></img></a>
+        <a href={`${process.env.PUBLIC_URL}`}><img className='ml-2 h-7' src={`${process.env.PUBLIC_URL}/images/arrow-left.svg`} alt='/'></img></a>
         <div className='font-semibold text-xl ml-18 '>Provided Locations</div>
       </div>
       <div className="flex border-b-1 py-5 border-gray-300 justify-between">
@@ -74,7 +74,9 @@ function Location() {
           </div>
 
         </div>
-        <img className="w-full h-auto border-t-1 border-gray-300" src={`${process.env.PUBLIC_URL}/images/tabs.png`} alt='/'></img>
+        <div className="sticky bottom-0 ">
+          <img className="w-full h-auto border-t-1 border-gray-200 bg-white" src={`${process.env.PUBLIC_URL}/images/tabs.png`} alt='/'></img>
+        </div>
       </div>
 
     </div>
